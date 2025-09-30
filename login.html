@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=https://www.onetrust.com/" />
 
   <title>authentication testing demo page</title>
+
+  <!-- OneTrust Cookies Consent Notice start for usot25.github.io/cookie-banner/login.html -->
+
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8"
+    data-domain-script="019990a6-b965-76dd-a68d-9eb8b0da2054-test"></script>
+  <script type="text/javascript">
+    function OptanonWrapper() { }
+  </script>
+  <!-- OneTrust Cookies Consent Notice end for usot25.github.io/cookie-banner/login.html -->
+
+
   <style>
     body {
       margin: 0;
@@ -14,13 +26,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh; /* full height centering */
+      min-height: 100vh;
+      /* full height centering */
     }
+
     .card {
       background: white;
       padding: 2.5rem;
       border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
       width: 100%;
       max-width: 380px;
       text-align: center;
@@ -28,11 +42,13 @@
       flex-direction: column;
       align-items: center;
     }
+
     h2 {
       margin-bottom: 2rem;
       color: #222;
       font-weight: 600;
     }
+
     input {
       width: 100%;
       padding: 0.9rem;
@@ -43,9 +59,11 @@
       outline: none;
       transition: border 0.2s;
     }
+
     input:focus {
       border-color: #333;
     }
+
     button {
       width: 100%;
       padding: 0.9rem;
@@ -58,14 +76,17 @@
       cursor: pointer;
       transition: background 0.3s;
     }
+
     button:hover {
       background: #555;
     }
+
     .error {
       color: red;
       margin-top: 1rem;
       font-size: 0.9rem;
     }
+
     /* Protected content */
     #content {
       display: none;
@@ -79,24 +100,28 @@
       padding: 1rem;
       box-sizing: border-box;
     }
+
     iframe {
       width: 100%;
       max-width: 800px;
       aspect-ratio: 16/9;
       border: none;
       border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     }
+
     .logout-btn {
       background: crimson;
       max-width: 200px;
       border-radius: 10px;
     }
+
     .logout-btn:hover {
       background: darkred;
     }
   </style>
 </head>
+
 <body>
   <!-- Login Form -->
   <div class="card" id="loginCard">
@@ -120,7 +145,7 @@
       otUser5: "otUser5"
     };
 
-console.log(`const users = {
+    console.log(`const users = {
   otUser1: "otUser1",
   otUser2: "otUser2",
   otUser3: "otUser3",
@@ -158,5 +183,9 @@ console.log(`const users = {
       document.getElementById("error").textContent = "";
     }
   </script>
+
+
+
 </body>
+
 </html>
